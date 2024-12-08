@@ -1,0 +1,186 @@
+.display-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Cl-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.Cl-study-title {
+  font-weight: bold;
+}
+
+.goToAdmin {
+  color: black;
+  font-size: small;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.goToAdmin:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.progress-section {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+.progress-container {
+  background-image: url("./background-img.png");
+  border: 1px solid lightgray;
+  width: 100%;
+  height: 280px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.members-content {
+  border: 1px solid lightgray;
+  width: 180px;
+  height: 280px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 20px;
+  margin-top: 45px;
+  flex-direction: column;
+}
+
+.checklist-content {
+  border: 1px solid lightgray;
+  width: 900px;
+  height: auto;
+  background-color: white;
+  padding: 20px;
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.weekly-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  
+}
+
+.weekly-header {
+  text-align: center;
+  color: white;
+}
+
+.weekly-progressbar {
+  width: 57%;
+  font-size: 12px;
+  text-align: left;
+  color: white;
+  position: absolute;
+  bottom: 5px;
+}
+
+.custom-progress-bar .progress-bar {
+  background-color: #8d9429;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.custom-progress-bar {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.members-header-text {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.user-icon {
+  font-size: 1.5em;
+  margin-right: 5px;
+  color: #555;
+}
+
+.members-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  position: relative;
+}
+
+.members-name-text {
+  color: #333;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.members-name-text:hover {
+  text-decoration: underline;
+}
+
+.check-header-text {
+  font-weight: bold;
+  color: gray;
+}
+
+.week-checklist {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.check-box {
+  transform: scale(1.5);
+  margin: 10px;
+}
+
+.week-todo {
+  margin-top: 3px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.week-todo:hover {
+  text-decoration: underline;
+}

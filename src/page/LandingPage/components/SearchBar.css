@@ -1,0 +1,22 @@
+.study-search {
+  position: relative;
+  width: 98%;
+  margin-bottom: 1.5em;
+  /* padding-right: 1em; */
+}
+
+.study-search input {
+  width: 93%;
+  padding: 0.85rem;
+  padding-right: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+}
+
+.search-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}

@@ -1,0 +1,45 @@
+/* .top1-navbar{
+  font-family: "Pretendard-Bold";
+  position: fixed;
+  top:0;
+  width:100%;
+  display: flex;
+  
+  height:12vh;
+  background-color: rgba(218,222,170,255);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+} */
+
+.top-navbar{
+  font-family: "Pretendard-Bold";
+  position: fixed;
+  top:0;
+  width:100%;
+  display: flex;
+  /* justify-content:space-between; */
+  height:12vh;
+  background-color: rgba(218,222,170,255);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  font-weight: bold;
+}
+
+.site-title-section{
+  color:white;
+  /* font-weight:600; */
+  margin-left:3.5em;
+  font-size: 1.2em;
+}
+.sidebar-container {
+  font-family:"Pretendard-Regular";
+  /* flex: 0 0 500px; */
+  width: 10%; /* 23에서 10으로 바꿈 */
+  height: 100vh;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  
+}

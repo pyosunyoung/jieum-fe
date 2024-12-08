@@ -1,0 +1,197 @@
+.admin-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    width: 50%;
+}
+
+.header-section {
+    margin-bottom: 20px;
+}
+
+.header-section h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    /* 두 컨테이너 간격 추가 */
+    width: 90%;
+}
+
+/* Study Plan Section */
+.study-plan-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    /* 더 넓게 설정 */
+    height: auto;
+    /* 높이를 내용에 맞게 조정 */
+}
+
+.study-plan-header {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #6c6c39;
+}
+
+.study-plan-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    /* 항목 구분선 추가 */
+    font-size: 1em;
+}
+
+.study-plan-item:last-child {
+    border-bottom: none;
+    /* 마지막 항목 구분선 제거 */
+}
+
+.study-plan-week {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+}
+
+.study-plan-description {
+    flex: 1;
+    color: #555;
+}
+
+.study-plan-note {
+    display: block;
+    font-size: 0.85em;
+    color: #888;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.edit-icon {
+    font-size: 1.2em;
+    color: #888;
+    cursor: pointer;
+}
+
+.edit-icon:hover {
+    color: #555;
+}
+
+/* Members Section */
+.members-section-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 35%;
+    /* 더 좁게 설정 */
+    height: auto;
+}
+
+.members-header {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #6c6c39;
+}
+
+.member-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    /* 항목 구분선 추가 */
+}
+
+.member-item:last-child {
+    border-bottom: none;
+    /* 마지막 항목 구분선 제거 */
+}
+
+.member-icon {
+    font-size: 2em;
+    color: #6c6c39;
+    margin-right: 15px;
+}
+
+.member-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.member-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.member-name {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.member-role {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    color: #6c6c39;
+    font-weight: bold;
+}
+
+.crown-icon {
+    font-size: 1em;
+    color: #ffc107;
+    margin-left: 5px;
+}
+
+.member-info {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.member-passion {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 5px;
+}
+
+.ellipsis-icon {
+    font-size: 1.2em;
+    color: #888;
+    cursor: pointer;
+}
+
+.ellipsis-icon:hover {
+    color: #555;
+}
+
+.remove-member-btn {
+    margin-top: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.remove-member-btn:hover {
+    background-color: #e60000;
+}

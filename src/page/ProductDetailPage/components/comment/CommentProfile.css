@@ -1,0 +1,17 @@
+.comment-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: -0.3rem;
+}
+
+.comment-profile .MuiSvgIcon-root {
+  margin-right: 5px;
+  font-size: 2rem;
+  color: #6c9466;
+}
+
+.comment-author {
+  font-size: 0.9rem;
+  font-family: 'Pretendard-Bold';
+}
+

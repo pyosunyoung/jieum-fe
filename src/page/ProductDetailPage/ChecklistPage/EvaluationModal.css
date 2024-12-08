@@ -1,0 +1,78 @@
+/* EvaluationModal.css */
+
+.evaluation-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.evaluation-modal-content {
+  background-color: #dadeaa;
+  border: 2px solid #8d9429;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+}
+
+.evaluation-modal-title {
+  text-align: center;
+  color: #8d9429;
+}
+
+.evaluation-modal-list {
+  margin-top: 20px;
+}
+
+.evaluation-modal-member {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.evaluation-modal-member-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.evaluation-modal-buttons button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.evaluation-modal-good-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.evaluation-modal-average-button {
+  background-color: #9e9e9e;
+  color: white;
+}
+
+.evaluation-modal-bad-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.evaluation-modal-close-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #8d9429;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

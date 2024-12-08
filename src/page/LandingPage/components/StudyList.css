@@ -1,0 +1,94 @@
+.study-section1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  /* margin: 1rem; */
+  width: 100%;
+}
+
+/* PADDING 넣기 */
+
+.study-items1 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.study-list-title{
+  font-family: "Pretendard-Bold";
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+  margin-left: 0.2em;
+}
+
+.study-item1 {
+  box-sizing: border-box;
+  background-color: #E8E8E8;
+  width: 100%;
+  /* margin: 1rem auto; */
+  /* border: 1px solid #ccc; */
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.7em 1.1em;
+  padding-bottom: 1em;
+  margin-bottom: 0.8em;
+}
+
+.study-item1:hover{
+  transform:scale(1.08, 1.04);
+  transition: ease-in-out 0.2s; 
+  cursor:pointer;
+}
+
+.item-badge-section{
+  margin-bottom: 0.3em;
+  display:flex;
+}
+
+.list-badge-style{
+  background-color: white;
+  padding: 0.4em 0.8em;
+  border-radius: 1.5em;
+  font-size: 0.5em;
+  margin-right: 0.7em;
+}
+
+.recruit-badge{
+  background-color: #AFB476;
+  color:white;
+}
+
+.study-item-title-section{
+
+}
+
+.study-item-title {
+  /* font-weight: bold; */
+  color: #191919;
+  font-size: 1rem;
+  margin-bottom: 0.3em;
+}
+
+.study-item-subtitle{
+  font-size: 0.6em;
+}
+
+.study-item-button-section{
+  display:flex;
+  align-items: center;
+}
+
+.study-item-icon{
+  font-size: 1em !important;
+  margin-right: 0.2em;
+}
+
+.icon-number{
+  font-size: 0.7em;
+  margin-right: 0.9em;
+}
+
+
+.study-item-icon.liked {
+  color: red; /* 좋아요 상태를 시각적으로 표시 */
+}

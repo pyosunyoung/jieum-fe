@@ -1,0 +1,60 @@
+.myPage-profile-box {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  position: relative;
+  background-color: #f3f3f3;
+  border-radius: 0.5rem;
+  width: 80%;
+  /* height: 40%; */
+  overflow: hidden;
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.25);
+  border: 2px solid #e6e6e6;
+}
+
+.profile-section {
+  display: flex;
+}
+
+.user-profile-icon {
+  margin-left: 0.42rem;
+  font-size: 4rem !important;
+  color: #6c9466;
+  font-weight: bold;
+}
+
+.user-profile-item strong {
+  font-size: 1.1rem;
+  color: #191919;
+}
+
+.user-profile-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: flex-start;
+  font-size: 0.8rem;
+  color: #7a7a7a;
+}
+
+.interest-keywords-Subtitle {
+  font-size: 0.8rem;
+  color: #7a7a7a;
+}
+
+.interest-keywords {
+  margin-top: -0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.keyword-item {
+  padding: 0.2rem 0.56rem;
+  font-size: 0.8rem;
+  color: #7a7a7a;
+  background-color: #dadeaa;
+  border-radius: 0.75rem;
+  white-space: nowrap;
+  font-weight: bold;
+}

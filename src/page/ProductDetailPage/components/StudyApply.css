@@ -1,0 +1,21 @@
+.apply-button {
+  background-color: #dadeaa;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.apply-button:hover {
+  background-color: #afb476;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.study-recruit-button-box {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}

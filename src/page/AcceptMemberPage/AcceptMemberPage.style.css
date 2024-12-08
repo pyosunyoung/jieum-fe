@@ -1,0 +1,100 @@
+.accept-member-page{
+    margin-left: 23%;
+    margin-top: 12vh;
+    padding: 2em 4em;
+    font-family: "Pretendard-Regular";
+}
+
+.member-page-subject{
+    font-family: "Pretendard-Bold";
+    font-size: 1.7em;
+    margin-bottom: 1em;
+}
+
+.accept-member-container{
+    width: 100%;
+    border: 2px solid #E6E6E6;
+    border-radius: 10px;
+    padding: 1em 3em;
+    padding-bottom: 2.5em;
+}
+
+.accepted-member-section{
+    margin-bottom: 2em;
+}
+
+.accept-title{
+    font-family: "Pretendard-Bold";
+    margin-bottom: 0.5em;
+}
+
+.gray-title{
+    color: #7A7A7A;
+}
+
+.main-color-title{
+    color: #8D9429;
+}
+
+.member-row{
+    border: 2px solid #E6E6E6;
+    border-radius: 10px;
+    padding: 0.6em 1.4em;
+    display:flex;
+    align-items: center;
+    color:#7A7A7A;
+    width:fit-content;
+    margin-bottom: 0.5em;
+}
+
+.member-info-box{
+    display:flex;
+    margin-right: 2em;
+}
+
+.member-icon-box{
+    padding-top: 0.4em;
+    margin-right: 0.6em;
+}
+
+.member-profile-icon{
+    color: #6c9466;
+    font-size: 2em !important;
+    /* font-size: 2em; */
+}
+
+.member-name{
+    font-size: 1.2em;
+    font-family: "Pretendard-Bold"
+}
+
+.member-temp-info{
+    font-size: 0.7em;
+    line-height: 0.8;
+}
+
+.member-appeal-phrase{
+    width: 15em;
+}
+
+.member-button-section{
+    margin-left: 2em;
+}
+
+.member-button{
+    /* font-weight: bold; */
+    border: 2px solid #E6E6E6;
+    font-size: 0.9em;
+    padding: 0.15em 1.6em;
+    border-radius: 0.4em;
+    margin-left: 1em;
+    color:#7A7A7A;
+}
+
+.member-refuse{
+    background-color: white;
+}
+
+.member-accept{
+    background-color: #DADEAA;
+}

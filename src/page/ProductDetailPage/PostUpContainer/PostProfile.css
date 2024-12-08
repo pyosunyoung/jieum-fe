@@ -1,0 +1,44 @@
+/* 전체 프로필 박스 */
+.post-profile-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem 0;
+  border-bottom: 2px solid #c6c5c5;
+}
+
+/* 프로필 아이콘 감싸는 컨테이너 */
+.post-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-icon {
+  font-size: 3rem !important;
+  color: #6c9466;
+}
+
+.post-profile {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0.3rem;
+}
+
+.user-name {
+  font-family: 'Pretendard-Bold';
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.post-time {
+  color: #7a7a7a;
+  font-size: 0.83rem;
+}
