@@ -13,7 +13,13 @@ const StudyForm = ({ studyInfo, weeklySchedule }) => {
             {index < studyInfo.category.length - 1 && ' '}
           </span>
         ))}
-        <span> #{studyInfo.sku}</span>
+        <span> #{studyInfo.sku} </span>
+        {studyInfo.pushcategory.map((badge, index) => (
+          <span key={index}>
+            #{badge}
+            {index < studyInfo.category.length - 1 && ' '}
+          </span>
+        ))}
       </p>
       <p>
       <strong>스터디 기간 |</strong> {Object.keys(weeklySchedule).length}주

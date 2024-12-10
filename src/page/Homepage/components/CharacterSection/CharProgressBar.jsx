@@ -3,8 +3,8 @@ import "react-step-progress-bar/styles.css";
 import {ProgressBar} from "react-step-progress-bar"
 import "../HomepageComponent.style.css"
 
-const CharProgressBar = ({barPercent}) => {
-  const totalTemperature = JSON.parse(localStorage.getItem('totaltemperature')) || 80;
+const CharProgressBar = ({totalTemperature }) => {
+  
   return (
     <div className='char-progress-bar'>
       <ProgressBar

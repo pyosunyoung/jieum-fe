@@ -3,7 +3,8 @@ import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import StudyList from '../components/StudyList';
 import './LikedPostsPage.css';
-
+import { Container } from 'react-bootstrap';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 const LikedPostsPage = () => {
   const { user } = useSelector((state) => state.user);
   const productList = useSelector((state) => state.product.productList);
@@ -34,8 +35,9 @@ const LikedPostsPage = () => {
   };
 
   return (
+    <Container>
     <div className="liked-posts-page">
-      <h1>관심 목록</h1>
+      <h1 className="liked-posts-page-icon-container"><FavoriteBorderIcon className="liked-posts-page-icon"/></h1>
       {likeProductList.length > 0 ? (
         likeProductList.map((item) => (
           <div key={item._id} onClick={() => handlePostClick(item._id)}>
@@ -46,6 +48,7 @@ const LikedPostsPage = () => {
         <p>관심 게시글이 없습니다.</p>
       )}
     </div>
+    </Container>
   );
 };
 

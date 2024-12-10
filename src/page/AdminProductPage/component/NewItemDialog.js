@@ -56,6 +56,7 @@ const InitialFormData = {
   category: [],
   status: 'active',
   price: 0,
+  pushcategory:["", "", ""] 
 };
 
 const NewItemDialog = ({ mode, showDialog, setShowDialog }) => {
@@ -219,18 +220,26 @@ const handlePreviousPage = () => {
     });
   };
 
+  const handlepushcategoryChange= (e, index) => {
+    const newPushCategory = [...formData.pushcategory];
+    newPushCategory[index] = e.target.value; // 해당 index에 새 값 저장
+    setFormData({
+      ...formData,
+      pushcategory: newPushCategory,
+    });
+  };
   const uploadImage = (url) => {
     //이미지 업로드
     setFormData({ ...formData, image: url });
   };
-
+  
   return (
     <Modal show={showDialog} onHide={handleClose}>
       <Modal.Header closeButton>
         {mode === 'new' ? (
           <Modal.Title>스터디 생성하기</Modal.Title>
         ) : (
-          <Modal.Title>Edit Product</Modal.Title>
+          <Modal.Title>스터디 수정하기</Modal.Title>
         )}
       </Modal.Header>
       {error && (
@@ -246,18 +255,21 @@ const handlePreviousPage = () => {
         <Form.Label>카테고리를 선택해주세요.</Form.Label>
         <div>
           {MAIN_CATEGORIES.map((category, index) => (
+            
             <Button
               key={index}
               value={category}
+              className="category-custom-button"
               variant={
                 formData.category.includes(category)
-                  ? 'primary'
-                  : 'outline-primary'
+                  ? 'secondary'
+                  : 'outline-secondary'
               }
               onClick={onHandleCategory}
             >
-              {category}
+              {category} 
             </Button>
+            
           ))}
         </div>
       </Form.Group>
@@ -296,7 +308,20 @@ const handlePreviousPage = () => {
       
         
       </Row>
-
+      <Row className="mb-3">
+  {[0, 1, 2].map((index) => (
+    <Form.Group as={Col} controlId={`pushcategory-${index}`} key={index}>
+      <Form.Label>추가 태그 {index + 1}</Form.Label>
+      <Form.Control
+        onChange={(e) => handlepushcategoryChange(e, index)}
+        type="string"
+        placeholder={`추가 태그 ${index + 1}`}
+        required
+        value={formData.pushcategory[index] || ""}
+      />
+    </Form.Group>
+  ))}
+</Row>
       <Row>
       <Form.Group as={Col} controlId="name">
           <Form.Label>글제목</Form.Label>
@@ -323,12 +348,12 @@ const handlePreviousPage = () => {
         />
       </Form.Group>
 
-      <Button onClick={handleNextPage}>다음</Button>
+      <Button onClick={handleNextPage} variant="secondary" className="custom-button">다음</Button>
     </>
   ) : (
     <>
       {/* 두 번째 페이지: stock 입력 폼 */}
-      <Button onClick={handlePreviousPage} variant="secondary" >이전</Button>
+      <Button onClick={handlePreviousPage} variant="secondary" className="custom-button" >이전</Button>
       <Form.Group className="mb-3" controlId="stock">
         <Form.Label className="mr-1">스터디기간</Form.Label>
         {stockError && (
@@ -337,7 +362,7 @@ const handlePreviousPage = () => {
         {/* <Button size="sm" onClick={addStock}>
           Add +
         </Button> */}
-        <DropdownButton title="Choose Weeks" onSelect={(eventKey) => addStock(Number(eventKey))}>
+        <DropdownButton variant="warning" title="Choose Weeks" onSelect={(eventKey) => addStock(Number(eventKey))}>
         <Dropdown.Item eventKey="2">2 Weeks</Dropdown.Item>
         <Dropdown.Item eventKey="4">4 Weeks</Dropdown.Item>
         <Dropdown.Item eventKey="16">16 Weeks</Dropdown.Item>
@@ -489,12 +514,12 @@ const handlePreviousPage = () => {
           </Form.Group> */}
         </Row>
         {mode === 'new' ? (
-          <Button variant="primary" type="submit"  >
+          <Button variant="secondary" className="custom-button-submit-edit" type="submit"  >
             Submit
           </Button>
           
         ) : (
-          <Button variant="primary" type="submit">
+          <Button variant="secondary" className="custom-button-submit-edit" type="submit">
             Edit
           </Button>
         )}

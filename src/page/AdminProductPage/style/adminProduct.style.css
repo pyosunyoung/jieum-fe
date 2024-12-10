@@ -160,3 +160,57 @@
     color: #dadeaa; /* 호버 시 텍스트 색상 */
     transition: 0.3s; /* 부드러운 전환 효과 */
   }
+
+
+  .custom-button {
+    background-color: #b2b86e; /* 버튼 배경색 (기존보다 연한 녹색) */
+    border-color: #b2b86e; /* 테두리 색 */
+    color: white; /* 텍스트 색 */
+  }
+  
+  .custom-button:hover,
+  .custom-button:focus {
+    background-color: #e3e6c2; /* 호버 시 배경색 (기존보다 연한 색) */
+    color: #b2b86e; /* 호버 시 텍스트 색 */
+  }
+  
+  .custom-button:active {
+    background-color: #c8cd8a; /* 활성화 시 배경색 (기존보다 연한 색) */
+    border-color: #c8cd8a; /* 활성화 시 테두리 색 */
+  }
+
+  .category-custom-button{
+    background-color: #8d9429; /* 버튼 배경색 */
+    border-color: #8d9429; /* 테두리 색 */
+    color: white; /* 텍스트 색 */
+    margin-left: 10px;
+  }
+
+  .category-custom-button:hover,
+  .category-custom-button:focus {
+    background-color: #dadeaa; /* 호버 시 배경색 */
+    color: #8d9429; /* 호버 시 텍스트 색 */
+  }
+  
+  .category-custom-button:active {
+    background-color: #a4a94c; /* 활성화 시 배경색 */
+    border-color: #a4a94c; /* 활성화 시 테두리 색 */
+  }
+
+
+  .custom-button-submit-edit{
+    background-color: #8d9429; /* 버튼 배경색 */
+    border-color: #8d9429; /* 테두리 색 */
+    color: white; /* 텍스트 색 */
+  }
+
+  .custom-button-submit-edit:hover,
+  .custom-button-submit-edit:focus {
+    background-color: #dadeaa; /* 호버 시 배경색 */
+    color: #8d9429; /* 호버 시 텍스트 색 */
+  }
+  
+  .custom-button-submit-edit:active {
+    background-color: #a4a94c; /* 활성화 시 배경색 */
+    border-color: #a4a94c; /* 활성화 시 테두리 색 */
+  }

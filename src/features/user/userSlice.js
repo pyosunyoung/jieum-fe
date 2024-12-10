@@ -212,6 +212,9 @@ const userSlice = createSlice({
     increaseTotalTemperature: (state, action) => {
       state.totaltemperature = action.payload;
     },
+    TotalTemperature: (state, action) => {
+      state.totaltemperature = action.payload;
+    },
     evaluateMemberTemperature: (state, action) => {
       const { memberKey, score } = action.payload;
       // 기존 온도를 로컬스토리지에서 가져오고 업데이트

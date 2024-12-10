@@ -3,3 +3,14 @@
   margin-left: 300px;
   width: 800px;
 }
+
+.liked-posts-page-icon-container{
+  color: red;
+  width: 100%;
+  text-align: center;
+}
+
+.liked-posts-page-icon{
+  width: 100px;
+  height: 100px;
+}

@@ -15,12 +15,24 @@ const StudyCarousel = ({ productList, user }) => {
 
   // productList에서 category와 interestTags를 비교하여 일치하는 항목을 교집합 크기에 따라 정렬
   const sortedProducts = productList
-    .map(product => ({
+  .map(product => {
+    const categoryMatchCount = product.category.filter(category =>
+      interestTags.includes(category)
+    ).length;
+
+    const pushCategoryMatchCount = product.pushcategory
+      ? product.pushcategory.filter(pushcategory =>
+          interestTags.includes(pushcategory)
+        ).length
+      : 0;
+
+    return {
       ...product,
-      matchCount: product.category.filter(category => interestTags.includes(category)).length, // 교집합 크기 계산
-    }))
-    .filter(product => product.matchCount > 0) // 매칭되는 항목만 필터링
-    .sort((a, b) => b.matchCount - a.matchCount); // 교집합 크기에 따라 내림차순 정렬
+      matchCount: categoryMatchCount + pushCategoryMatchCount, // 두 매칭 크기의 합산
+    };
+  })
+  .filter(product => product.matchCount > 0) // 매칭되는 항목만 필터링
+  .sort((a, b) => b.matchCount - a.matchCount); // 교집합 크기에 따라 내림차순 정렬
 
   // 카드 클릭 핸들러
   const handleCardClick = (id) => {

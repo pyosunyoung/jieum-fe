@@ -166,12 +166,13 @@ const ChecklistPage = () => {
           <>
             {user?.level === "admin" && (
               <>
-                <button onClick={handleStudyComplete}>스터디 완료</button>
-                <button onClick={() => setIsModalOpen(true)}>스터디원 상호 평가</button>
+                
+                <button onClick={() => setIsModalOpen(true)} className="study-eval-button">스터디원 상호 평가</button>
+                <button onClick={handleStudyComplete} className="study-complete-button">스터디 완료</button>
               </>
             )}
             {user?.level === "customer" && (
-              <button onClick={() => setIsModalOpen(true)}>스터디원 상호 평가</button>
+              <button onClick={() => setIsModalOpen(true)} className="study-eval-button">스터디원 상호 평가</button>
             )}
             {isModalOpen && (
         <EvaluationModal
