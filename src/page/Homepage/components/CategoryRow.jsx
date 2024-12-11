@@ -6,7 +6,7 @@ import "./HomepageComponent.style.css";
 const CategoryRow = ({item,likes}) => {
     // console.log(item);
   return (
-    <div className="study-item">
+    <div className="study-item1">
       <div className="item-badge-section">
         <span className="list-badge-style recruit-badge">모집중</span>
         {item.category.map((badge) => (

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./WeekTodoPage.css";
 import { useDispatch, useSelector } from "react-redux";
-import { increaseTemperature, updateChecklist } from "../../../features/user/userSlice";
+import { increaseTemperature, increaseTotalTemperature, updateChecklist } from "../../../features/user/userSlice";
 
 const WeekTodoPage = () => {
   const { id } = useParams(); // 주차 번호
@@ -11,7 +11,7 @@ const WeekTodoPage = () => {
   const [uploadedFile, setUploadedFile] = useState(null);
 
   const { selectedProduct } = useSelector((state) => state.product);
-  const { user } = useSelector((state) => state.user);
+  const { user,totaltemperature } = useSelector((state) => state.user);
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
@@ -27,7 +27,10 @@ const WeekTodoPage = () => {
       
       // Redux 액션 호출: 온도 증가
       dispatch(increaseTemperature());
-
+      const updatedTemperature = totaltemperature + 35;
+    localStorage.setItem("totaltemperature", updatedTemperature);
+    dispatch(increaseTotalTemperature(updatedTemperature));
+    
       setUploadedFile(null); // 파일 업로드 후 초기화
     } else {
       alert("업로드할 파일을 선택하세요.");
