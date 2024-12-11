@@ -143,7 +143,7 @@ const ChecklistPage = () => {
   };
   
   return (
-    <div className="display-center">
+    <div className="study-todo-display">
       <div className="main-content">
         <ProgressSection
           id={id}

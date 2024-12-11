@@ -3,8 +3,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #f9f9f9;
+    margin-left: 23%;
+    margin-top: 14vh;
   }
   
   .week-todo-page {
@@ -13,6 +15,7 @@
     align-items: center;
     width: 100%;
     max-width: 800px;
+    margin-top: 3em;
   }
   
   .header {

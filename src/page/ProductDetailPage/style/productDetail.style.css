@@ -1,5 +1,11 @@
+.detailss-page{
+    margin-top: 14vh;
+    margin-left: 23%;
+}
+
 .product-detail-card{
-    margin-top: 110px;
+    
+    /* width: 70%; */
 }
 
 .size-drop-down{
@@ -15,18 +21,29 @@
     margin-bottom: 10px;
 }
 
+.detailss-button-section{
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 4em;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
 .study-button-container{
     
-    margin-left: 1100px
+    /* margin-left: 1100px */
 }
 .study-button-container-custom{
     background-color: #dadeaa; /* 버튼 배경 색상 */
     color: black;
-    border: 2px solid #8d9429; /* 테두리 색상 */
+    /* border: 2px solid #8d9429; 테두리 색상 */
+    border: none;
+    /* color:white; */
+    font-weight: 700;
     border-radius: 5px; /* 둥근 모서리 */
     padding: 10px 20px; /* 버튼 안쪽 여백 */
     cursor: pointer; /* 클릭 가능한 UI */
-    margin-left: auto; /* 버튼을 오른쪽 정렬 */
+    /* margin-left: auto; 버튼을 오른쪽 정렬 */
 }
 .study-button-container-custom:hover{
     background-color: #8d9429; /* 호버 시 버튼 색상 */

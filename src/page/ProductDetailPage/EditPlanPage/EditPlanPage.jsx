@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import React, {useState} from "react";
+import {useParams, useNavigate} from "react-router-dom";
 import "../EditPlanPage/EditPlanPage.css";
-import { useDispatch, useSelector } from "react-redux";
-import { editProduct } from "../../../features/product/productSlice";
+import {useDispatch, useSelector} from "react-redux";
+import {editProduct} from "../../../features/product/productSlice";
 
 const EditPlanPage = () => {
   const dispatch = useDispatch();
-  const { selectedProduct } = useSelector((state) => state.product);
-  const { stock } = selectedProduct; // stock 데이터
-  const { id } = useParams();
+  const {selectedProduct} = useSelector((state) => state.product);
+  const {stock} = selectedProduct; // stock 데이터
+  const {id} = useParams();
   const navigate = useNavigate();
 
   // 배열 기반으로 stock 데이터 변환
@@ -49,41 +49,45 @@ const EditPlanPage = () => {
 
     alert("등록되었습니다.");
     // 새로고침 없이 반영된 상태를 확인하도록 navigate 사용
-    navigate(`/product/${selectedProduct._id}/manage-study/StudyAdminPage`, { replace: true });
+    navigate(`/product/${selectedProduct._id}/manage-study/StudyAdminPage`, {
+      replace: true,
+    });
   };
 
   return (
-    <div className="edit-plan-page">
-      <h2>{selectedProduct.sku}</h2>
-      <h3>{`${id}주차`}</h3>
-      <div className="key-section">
-        <label htmlFor="plan-key"></label>
-        <input
-          id="plan-key"
-          type="text"
-          placeholder="Key를 입력하세요"
-          value={planKey}
-          onChange={handlePlanKeyChange}
+    <div className="edit-page-page">
+      <div className="edit-plan-page">
+        <h2>{selectedProduct.sku}</h2>
+        <h3>{`${id}주차`}</h3>
+        <div className="key-section">
+          <label htmlFor="plan-key"></label>
+          <input
+            id="plan-key"
+            type="text"
+            placeholder="Key를 입력하세요"
+            value={planKey}
+            onChange={handlePlanKeyChange}
+          />
+        </div>
+        <textarea
+          placeholder="구체적인 계획을 작성해주세요."
+          value={planValue}
+          onChange={handlePlanValueChange}
         />
+        <div className="task-section">
+          <label htmlFor="task">과제:</label>
+          <input
+            id="task"
+            type="text"
+            placeholder="텍스트를 작성해주세요"
+            value={task}
+            onChange={(e) => setTask(e.target.value)}
+          />
+        </div>
+        <button className="submit-btn" onClick={handleSubmit}>
+          등록
+        </button>
       </div>
-      <textarea
-        placeholder="구체적인 계획을 작성해주세요."
-        value={planValue}
-        onChange={handlePlanValueChange}
-      />
-      <div className="task-section">
-        <label htmlFor="task">과제:</label>
-        <input
-          id="task"
-          type="text"
-          placeholder="텍스트를 작성해주세요"
-          value={task}
-          onChange={(e) => setTask(e.target.value)}
-        />
-      </div>
-      <button className="submit-btn" onClick={handleSubmit}>
-        등록
-      </button>
     </div>
   );
 };

@@ -105,11 +105,12 @@ const ProductDetail = () => {
   );
 
   return (
-    <Container className="product-detail-card"> 
+    <div className="detailss-page">
+    {/* <Container className="product-detail-card">  */}
     {/* 사용자 레벨 및 상태에 따른 추가 버튼 */}
     <div className="study-button-container">
-    {user?.level === "admin" && adminButton}
-          {user?.level === "customer" && customerButton}
+    
+          
           </div>
       <Row>
         
@@ -163,13 +164,18 @@ const ProductDetail = () => {
       </Row>
       <Check selectedProduct={selectedProduct} user={user} />
       {console.log("USER",user )}
-      <Button variant="dark" className="add-button" onClick={addItemToCart}>
+      <div className="detailss-button-section">
+        {user?.level === "admin" && adminButton}
+        {user?.level === "customer" && customerButton}
+        <Button variant="dark" className="add-button" onClick={addItemToCart}>
             스터디 신청
           </Button>
+      </div>
+      
 
-          
-    </Container>
-    
+        
+    {/* </Container> */}
+    </div>
   );
 };
 

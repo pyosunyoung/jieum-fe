@@ -121,7 +121,7 @@ const WeekTodoPage = () => {
             </div>
           </div>
         </div>
-        <button className="back-button" onClick={() => navigate("/checklist")}>
+        <button className="back-button" onClick={() => navigate(`/product/${id}/manage-study`)}>
           목록으로 돌아가기
         </button>
       </div>

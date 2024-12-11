@@ -1,9 +1,11 @@
-.display-center {
+.study-todo-display {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   height: 100vh;
+  margin-left: 23%;
+  margin-top: 14vh;
 }
 
 .Cl-header {

@@ -1,3 +1,8 @@
+.study-admin-display-box{
+    margin-left: 23%;
+    margin-top: 12vh;
+}
+
 .admin-page-container {
     display: flex;
     flex-direction: column;
@@ -5,7 +10,7 @@
     padding: 20px;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
-    width: 50%;
+    /* width: 50%; */
 }
 
 .header-section {
@@ -34,7 +39,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 60%;
     /* 더 넓게 설정 */
-    height: auto;
+    /* height: auto; */
     /* 높이를 내용에 맞게 조정 */
 }
 

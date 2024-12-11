@@ -81,7 +81,7 @@ const StudyAdminPage = () => {
   };
 
   return (
-    <div className="display-center">
+    <div className="study-admin-display-box">
       <div className="admin-page-container">
         {/* Header Section */}
         <div className="header-section">
